@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #F6F7F8;
+  --secondary: #FF1B54;
+  --tertiary: #2b2b2c;
+}
+
+body {
+  background: #2b2b2c;
+  font-family: 'Raleway', sans-serif;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+}
+
+/*--COMMON--*/
+main {
+  margin: 0 2.5vw;
+  min-height: 92vh;
+}
+
+.nameHigh {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.displayCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/*--HEADER CSS CODE START--*/
+
+nav {
+  background-color: var(--tertiary);
+  box-shadow: none;
+  padding: 0 2vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-logo {
+  max-height: 8vh;
+  max-width: fit-content;
+}
+
+.site-logo img{
+  padding: 1vh 0 0 1vh;
+  height: 100%;
+}
+
+nav ul a {
+  font-size: 2.2vh;
+  padding: 1vh 1.5vw;
+}
+
+nav ul a:hover {
+  border-bottom: var(--primary) solid 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*--HEADER CSS CODE END--*/
+
+/*--HOME START--*/
+
+.homePage {
+  padding: 25vh 0;
+}
+
+.homePage h2 {
+  font-size: 5vw; 
+}
+
+/*--HOME END--*/
+
+/*--ABOUT ME START--*/
+.aboutMeSection {
+  padding: 15vh 2vw;
+  font-size: 2.5vh;
+}
+
+.skillImages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.eachSkillImage img {
+  display: flex;
+  width: fit-content;
+  min-height: 7vw;
+  max-height: 7vw;
+  align-items: center;
+  justify-content: center;
+}
+/*--ABOUT ME END--*/
+
+.work {
+  display: flex;
+  padding: 10px 20px; 
+  text-decoration: none;
+  flex: 1 50%;
+}
+
+.img-preview {
+  flex: 100%;
+  position: relative;
+  border: 5px solid var(--p-color);
+  overflow: hidden;
+  max-height: 400px;
+  box-shadow: 0 0 10px var(--s-color-50t);
+}
+
+.small-img-preview {
+  max-height: 180px;
+}
