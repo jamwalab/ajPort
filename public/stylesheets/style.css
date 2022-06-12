@@ -258,6 +258,7 @@ nav ul a:hover {
 
 /*--Contact section Ends--*/
 
+/*--Service section start--*/
 .serviceList {
   font-size: 2.8vh;
 }
@@ -265,3 +266,5 @@ nav ul a:hover {
 .serviceList li {
   padding: 1.8vh;
 }
+
+/*--Service section ends--*/
