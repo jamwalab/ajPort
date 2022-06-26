@@ -1,6 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
+let mongoose = require('mongoose');
+let passport = require('passport');
+
+// enable jwt
+let jwt = require('jsonwebtoken');
+let DB = require('../config/db');
+
+// create the User Model instance
+let userModel = require('../models/user');
+let User = userModel.User; // alias
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home'});
